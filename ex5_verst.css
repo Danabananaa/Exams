@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #d92435, #7d4296);
+  height: 100vh;
+  overflow: hidden;
+}
+.raspolozhenie{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 10px;
+}
+.raspolozhenie h1{
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid silver;
+  font-size: 40px;
+  color: white;
+}
+.raspolozhenie h2{
+  text-align: center;
+  padding: 10px 10;
+  border-bottom: 1px solid silver;
+  font-size: 15px;
+  color: white;
+}
+.raspolozhenie form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid none;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  background: #5E1032;
+  color: white;
+}
+.txt_field label{
+  position: absolute;
+  top: 20%;
+  left: 100px;
+  color: white;
+  font-size: 20px;
+  pointer-events: none;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: white;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.forgot{
+  margin: -5px 0 20px 5px;
+  color: white;
+  text-align: center;
+}
+
+.login2{
+  width: 100%;
+  height: 250px;
+  background: #5E1032;
+  background-size: 150px, 300px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+
+}
+
+.social_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+.social_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
